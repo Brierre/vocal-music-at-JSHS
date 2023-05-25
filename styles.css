@@ -1,0 +1,23 @@
+.choir_img1 {
+    height: 200px;
+    background: url("images/music-7107045_1280.jpg");
+    background-size: cover;
+}
+
+.choir_img2 {
+    height: 200px;
+    background: url("images/christmas-motif-7562793_1280.jpg");
+    background-size: cover;
+}
+
+.choir_img3 {
+    height: 200px;
+    background: url("images/teacher-gradebook-7278379_1280.jpg");
+    background-size: cover;
+}
+
+.choir_img4 {
+    height: 200px;
+    background: url("images/animals-3293258_1280.jpg");
+    background-size: cover;
+}
