@@ -1,8 +1,7 @@
 /* 
-TO-DO: Figure out how to make the images in .choir work. Suggested code was from a stack overflow search.
+TO-DO: Figure out how to make the images in .choir work better. Suggested code was from a stack overflow search.
 Crop images to desired shape
 Connect the jumbotron buttons to something
-Write text for Activities dropdown
 How does the search button work? What does it actually search?
 Where does the information from the form go? Google forms populates a spreadsheet, I would also like an email notification.
 */
@@ -39,10 +38,15 @@ Where does the information from the form go? Google forms populates a spreadshee
     list-style-type: none;
 }
 
+.myThing {
+    font-size:larger;
+}
+
 .myThing img {
     width: 100px;
     float: left;
     padding-right: 10px;
+    padding-top: 10px;
 }
 
 .choir_img1 {
