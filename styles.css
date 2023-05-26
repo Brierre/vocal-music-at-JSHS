@@ -1,18 +1,51 @@
+/* 
+TO-DO: Figure out how to make the images in .choir work. Suggested code was from a stack overflow search.
+Crop images to desired shape
+Connect the jumbotron buttons to something
+Write text for Activities dropdown
+How does the search button work? What does it actually search?
+Where does the information from the form go? Google forms populates a spreadsheet, I would also like an email notification.
+*/
+
+.col-sm-3, .col-sm-6, .jumbotron {
+    border: solid 1px black;
+    border-radius: 3px;
+}
+
+.navbar {
+    border-radius: 3px;;
+}
+.navbar img {
+    height: 50px;
+}
+
+#contactForm {
+    border: none;
+    display: flex;
+    justify-content: center;
+    background-color: #f37344;
+}
+.calendar {
+    padding: 5px;
+    list-style-type: none;
+    font-size: 80%;
+}
+
 .choir_img1 {
     height: 200px;
-    background: url("images/music-7107045_1280.jpg");
+    background: url("images/ice-sculptures-1934570_1280.jpg");
     background-size: cover;
 }
 
 .choir_img2 {
     height: 200px;
-    background: url("images/christmas-motif-7562793_1280.jpg");
+    background: url("images/teacher-gradebook-7278379_1280.jpg");
     background-size: cover;
 }
 
 .choir_img3 {
     height: 200px;
-    background: url("images/teacher-gradebook-7278379_1280.jpg");
+    background: url("images/christmas-concert-7644914_1280.jpg");
     background-size: cover;
 }
 
@@ -20,4 +53,29 @@
     height: 200px;
     background: url("images/animals-3293258_1280.jpg");
     background-size: cover;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .badge-primary {
+    background-color: #f37344 !important;
+    outline-color: black;
+}
+
+.btn-outline-primary {
+    border-color: black;
+    color: black;
+}
+
+.navbar-brand {
+    margin: 5px;
+}
+
+.padded {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.container-fluid {
+    margin-top: 30px;
 }

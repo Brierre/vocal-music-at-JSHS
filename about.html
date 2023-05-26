@@ -6,104 +6,261 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Ms. Haigh</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <style>
-        div {
-            border: solid black;
-        }
-    </style> <!--will comment out after layout is created/functional-->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </head>
 <body class="container">
-    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: rgb(243, 115, 68);">
-        <a class="navbar-brand" href="index.html">Music and Theatre @ JSHS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f37344;">
+        <img src="images/Bulldogs.png">
+        <a class="navbar-brand" href="#">Music and Theatre @ JSHS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About Ms. Haigh</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Me</a>
+                    <a class="nav-link" href="about.html#contactForm">Contact Me</a> <!--This needs to link to the contact form at the bottom of about.html-->
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Classes
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        My Thing
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Concert Choir</a>
-                        <a class="dropdown-item" href="#">Voice 1</a>
-                        <a class="dropdown-item" href="#">Voice 2</a>
-                        <a class="dropdown-item" href="#">Class Piano</a>
-                        <a class="dropdown-item" href="#">American Musical Theatre 1</a>
-                        <a class="dropdown-item" href="#">American Musical Theatre 2</a>
-                        <a class="dropdown-item" href="#">Stage Technology</a>
-                        <a class="dropdown-item" href="#">Songwriting</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Activities
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Concert Choir</a>
-                        <a class="dropdown-item" href="#">Select Choir</a>
-                        <a class="dropdown-item" href="#">PMEA Auditions</a>
-                        <a class="dropdown-item" href="#">Spring Musical</a>
-                        <a class="dropdown-item" href="#">Fall Play</a>
-                        <a class="dropdown-item" href="#">Crochet Club</a>
-                        <a class="dropdown-item" href="#">Beginner Strings</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#Family">Family</a>
+                        <a class="dropdown-item" href="#SugarValleyCommunityBand">SV Community Band</a>
+                        <a class="dropdown-item" href="#CentralMountainMarchingBand">CM Band</a>
+                        <a class="dropdown-item" href="#SoftwareDev">Software Dev</a>
+                        <a class="dropdown-item" href="#DevelopmentProjects">Dev Projects</a>
+                        <a class="dropdown-item" href="#Kayaking">Kayaking</a>
+                        <a class="dropdown-item" href="#Crochet">Crochet</a>
+                        <a class="dropdown-item" href="#MMO">Favorite Games</a>
                     </div>
                 </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
     </nav>
     
     <div class="jumbotron">
         <h1 class="display-4">Meet Ms. Haigh</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <p class="lead">I'm not mean. I'm the meanest!</p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p>Don't believe a thing my sister tells you. I always win the mean contest between the two of us.</p>
         <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
 
     <div class="container">
         <div class="row">
-            Welcome to Vocal Music and Musical Theatre at Jersey Shore High School!
-        </div>
-        <div class="row">
             <div class="col-sm-3">
-                Classes
+                My Favorite Things
+                <ul>
+                    <li>Family</li>
+                    <li>Community Band</li>
+                    <li>Marching Band</li>
+                    <li>Software Dev</li>
+                    <li>Dev Projects</li>
+                    <li>Kayaking</li>
+                    <li>Crochet</li>
+                    <li>MMO</li>
+                </ul>
             </div>
             <div class="col-sm-6">
-                paragraph
+                <p>Wut, mate.</p>
+                <img width="90%" src="images/sisterMaryPatrick.jpg"> <!--photoshop: crop this image-->
             </div>
-            <div class="col-sm-3">
-                Important Dates
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <img src="">
-            </div>
-            <div class="col-sm-3">
-                <img src="">
-            </div>
-            <div class="col-sm-3">
-                <img src="">
-            </div>
-            <div class="col-sm-3">
-                <img src="">
-            </div>
-        </div>
 
+            <div class="col-sm-3">
+                <h3>Important Dates</h3>
+                <ol class="calendar">
+                    <li>July</li>
+                        <ol class="calendar"> 
+                            <li>12-14-CMMB Mini-Camp</li>
+                            <li>17-22-Band Camp</li>
+                        </ol>
+                    <li>August</li>
+                        <ol class="calendar">
+                            <li>Little League Grand Slam Parade</li>
+                            <li>SVCB Community Picnic</li>
+                            <li>First CMMB FBG</li>
+                        </ol>
+                    <li>September</li>
+                        <ol class="calendar">
+                            <li>CMMB FBG</li>
+                            <li>CMMB FBG</li>
+                            <li>15-Star-Spangled Spectacular</li>
+                        </ol>
+                    <li>October</li>
+                        <ol class="calendar">
+                            <li>CMMB FBG</li>
+                            <li>CMMB FBG</li>
+                            <li>Flaming Foliage Parade</li>
+                            <li>CMMB FBG</li>
+                            <li>CMMB FBG</li>
+                            <li>CMMB FBG</li>
+                            <li>24-LH Halloween Parade</li>
+                        </ol>
+                    <li>November</li>
+                        <ol class="calendar">
+                            <li>LH Xmas Parade</li>
+                        </ol>
+                    <li>December</li>
+                        <ol class="calendar">
+                            <li>CM Band Winter Concert</li>
+                            <li>CM Orchestra Winter Concert</li>
+                            <li>CM Choir Winter Concert</li>
+                            <li>CMMB Caroling Event</li>
+                            <li>SVCB Winter Concert</li>
+                            <li>SVCB Bank Performance</li>
+                        </ol>
+                    <li>January</li>
+                        <ol class="calendar">
+                        </ol>
+                    <li>February</li>
+                        <ol class="calendar">
+                        </ol>
+                    <li>March</li>
+                        <ol class="calendar">
+                        </ol>
+                    <li>April</li>
+                        <ol class="calendar">
+                            <li>Begin Marching Band</li>
+                        </ol>
+                    <li>May</li>
+                        <ol class="calendar">
+                            <li>Music in the Parks</li>
+                            <li>CM Band Spring Concert</li>
+                            <li>CM Orchestra Spring Concert</li>
+                            <li>CM Choir Spring Concert</li>
+                            <li>SVCB Spring Concert</li>
+                            <li>CMMB/SVCB Memorial Day Parades</li>
+                        </ol>
+                    <li>June</li>
+                        <ol class="calendar">   
+                        </ol>
+                </ol>
+            </div>
+            <div class="container-fluid">
+                <h3 class="myThing" id="Family">Family</h3>
+                <p class="myThing">
+                    It's just me, my two boys, my mom, and our cat, Loki. He's a good cat.
+                    <div><img height="200px" src="images/loki.jpg"></div> <!--edit image-->
+                </p>
+
+                <h3 class="myThing" id="SugarValleyCommunityBand">Sugar Valley Community Band</h3>
+                <p class="myThing">
+                    I have been with the Sugar Valley Community Band for several years. My sister, Ms. Crust, is the director of the group, 
+                    and it has been a family affair with our kids in the group at one point in time or another. This band is a very tight-knit 
+                    group of musicians from a tiny place over the mountain. They're small, but mighty! We perform at community events year-round. 
+                    My roles have included: trumpet, clarinet, oboe, and currently French horn, and I have even had to fill in as conductor once!
+                </p>
+
+                <h3 class="myThing" id="CentralMountainMarchingBand">Central Mountain Marching Band</h3>
+                <p class="myThing">
+                    I'm also a director of the Central Mountain Marching band, along with my sister and our percussion instructor, Mr. Mazzulla. I am 
+                    going into my 8th year of directing this group, serving as the show-writer and band front instructor, both skills I have picked 
+                    up along the way in my time there.
+                </p>
+
+                <h3 class="myThing" id="SoftwareDev">My Software Development Journey</h3>
+                <p class="myThing">
+                    Right now, I am studying software development, mostly just to acquire a new skill, although I probably wouldn't turn down a job 
+                    in development making double my teaching salary. I have already completed a back-end development boot camp through Promineo Tech 
+                    and the Community College of Philadelphia learning Java, MySQL, Spring Boot, APIs, Menu-Driven Applications, and so much more. 
+                    Currently, I am enrolled in the front-end development boot camp, again through Promineo Tech and Gateway Community College and 
+                    learning JavaScript, HTML5, CSS, Bootstrap, JQuery, React, and other skills. I really enjoy development using all of these skills, 
+                    but I have said all along I think I am a true back-end developer. This website is an example of using HTML5, CSS, and Bootstrap 
+                    that I have created.
+                </p>
+
+                <h3 class="myThing" id="DevelopmentProjects">Development Projects</h3>
+                <p class="myThing">
+                    Some of the projects I have created are located in my <a href="https://github.com/Brierre">GitHub</a>. So far, part 1 of 
+                    <a href="https://github.com/Brierre/RehearsalScheduler">Rehearsal Scheduler</a> is complete. I have created the card game, WAR, 
+                    using Java, and then JavaScript. I have made a Tic-Tac-Toe game, and I am working on a few others. I have also created websites 
+                    for the KCSD Alumni Band and my own page you see here. Look for more projects to come this summer as I learn more skills.
+                </p>
+
+                <h3 class="myThing" id="Kayaking">Kayaking</h3>
+                <p class="myThing">
+                    Since the first time I got in a kayak in a New Jersey creek and was attacked by a territorial goose, I was hooked. I bought rails 
+                    to put on my car, and as soon as I get them installed, I'm buying my own kayaks and rack. Some of my favorite kayak journeys were 
+                    13 miles on a too-shallow Pine Creek with my sister, Ashley, a moonlight kayak paddle of the loop at Pocomoke River State Park, 
+                    and kayaking in the Atlantic Ocean at Grand Turk.
+                    <img height="200px" src="images/kayak.jpg">
+                </p>
+
+                <h3 class="myThing" id="Crochet">Crochet</h3>
+                <p class="myThing">
+                    I love to crochet. I go in waves where I crochet everything and then don't crochet at all. I always said if I teach at just one 
+                    building I will start a crochet club. This year might be my chance. I especially love crocheting funny hats and little figures 
+                    from my favorite video game series, Final Fantasy, but when I have a lot of time, I like granny square projects.
+                </p>
+
+                <h3 class="myThing" id="MMO">My Favorite Games</h3>
+                <p class="myThing">
+                    My favorite game is an MMO called Final Fantasy XI. Despite it being more than 20 years old, it is still up and running on servers 
+                    that connect people worldwide. I contribute to an open source emulator project, writing code to emulate the game, which is where I 
+                    got the brainy idea to learn to code "for real". I also loved playing World of Warcraft, and I'm a big fan of the Civilization and 
+                    Age of Empires games.
+                </p>
+            </div>
+        </div>
     </div>
+    <div class="container-fluid">
+        <form>
+            <div id="contactForm"><h3 class="padded">Contact Ms. Haigh</h3></div>
 
-
-
-</body>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">First name</label>
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Last name</label>
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email Address">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Question Topic</label>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <option selected>Choose...</option>
+                            <option value="1">School event</option>
+                            <option value="2">Homework/grade</option>
+                            <option value="3">CMMB event</option>
+                            <option value="4">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <h3 class="padded">Thank you!</h3> <!--I want this to be centered up/down in the box-->
+                    </div>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </body>
 </html>
