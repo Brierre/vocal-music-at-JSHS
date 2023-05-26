@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </head>
-<body class="container">
+<body class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f37344;">
         <img src="images/Bulldogs.png">
         <a class="navbar-brand" href="#">Music and Theatre @ JSHS</a>
@@ -60,24 +60,24 @@
         <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-3">
                 My Favorite Things
-                <ul>
-                    <li>Family</li>
-                    <li>Community Band</li>
-                    <li>Marching Band</li>
-                    <li>Software Dev</li>
-                    <li>Dev Projects</li>
-                    <li>Kayaking</li>
-                    <li>Crochet</li>
-                    <li>MMO</li>
+                <ul class="myFavoriteThings">
+                    <li><a href="about.html#Family">Family</a></li>
+                    <li><a href="about.html#SugarValleyCommunityBand">Community Band</a></li>
+                    <li><a href="about.html#CentralMountainMarchingBand">Marching Band</a></li>
+                    <li><a href="about.html#SoftwareDev">Software Dev</a></li>
+                    <li><a href="about.html#DevelopmentProjects">Dev Projects</a></li>
+                    <li><a href="about.html#Kayaking">Kayaking</a></li>
+                    <li><a href="about.html#Crochet">Crochet</a></li>
+                    <li><a href="about.html#MMO">MMO</a></li>
                 </ul>
             </div>
             <div class="col-sm-6">
                 <p>Wut, mate.</p>
-                <img width="90%" src="images/sisterMaryPatrick.jpg"> <!--photoshop: crop this image-->
+                <img src="images/sisterMaryPatrick.jpg"> <!--photoshop: crop this image-->
             </div>
 
             <div class="col-sm-3">
@@ -151,72 +151,77 @@
                 </ol>
             </div>
             <div class="container-fluid">
-                <h3 class="myThing" id="Family">Family</h3>
-                <p class="myThing">
-                    It's just me, my two boys, my mom, and our cat, Loki. He's a good cat.
-                    <div><img height="200px" src="images/loki.jpg"></div> <!--edit image-->
-                </p>
+                <div class="myThing">
+                    <h3 id="Family">Family</h3>
+                    <img src="images/loki.jpg"><!--edit image-->
+                    <p>
+                        It's just me, my two boys, my mom, and our cat, Loki. He's a good cat. The kids and Mom are pretty cool too. We are excited 
+                        to be able to spend this summer together cleaning out the house of years' worth of accumulations. It's the small things. In 
+                        the fall, my oldest son goes off to Scotland to study abroad, and next spring my younger son will graduate from high school. 
+                        Both boys are musicians like me. We enjoy going to the beach together and disc golfing when we are not playing or singing in 
+                        some band or choir somewhere.
+                    </p>
 
-                <h3 class="myThing" id="SugarValleyCommunityBand">Sugar Valley Community Band</h3>
-                <p class="myThing">
-                    I have been with the Sugar Valley Community Band for several years. My sister, Ms. Crust, is the director of the group, 
-                    and it has been a family affair with our kids in the group at one point in time or another. This band is a very tight-knit 
-                    group of musicians from a tiny place over the mountain. They're small, but mighty! We perform at community events year-round. 
-                    My roles have included: trumpet, clarinet, oboe, and currently French horn, and I have even had to fill in as conductor once!
-                </p>
+                    <h3 id="SugarValleyCommunityBand">Sugar Valley Community Band</h3>
+                    <p>
+                        I have been with the Sugar Valley Community Band for several years. My sister, Ms. Crust, is the director of the group, 
+                        and it has been a family affair with our kids in the group at one point in time or another. This band is a very tight-knit 
+                        group of musicians from a tiny place over the mountain. They're small, but mighty! We perform at community events year-round. 
+                        My roles have included: trumpet, clarinet, oboe, and currently French horn, and I have even had to fill in as conductor once!
+                    </p>
 
-                <h3 class="myThing" id="CentralMountainMarchingBand">Central Mountain Marching Band</h3>
-                <p class="myThing">
-                    I'm also a director of the Central Mountain Marching band, along with my sister and our percussion instructor, Mr. Mazzulla. I am 
-                    going into my 8th year of directing this group, serving as the show-writer and band front instructor, both skills I have picked 
-                    up along the way in my time there.
-                </p>
+                    <h3 id="CentralMountainMarchingBand">Central Mountain Marching Band</h3>
+                    <p>
+                        I'm also a director of the Central Mountain Marching band, along with my sister and our percussion instructor, Mr. Mazzulla. I am 
+                        going into my 8th year of directing this group, serving as the show-writer and band front instructor, both skills I have picked 
+                        up along the way in my time there.
+                    </p>
 
-                <h3 class="myThing" id="SoftwareDev">My Software Development Journey</h3>
-                <p class="myThing">
-                    Right now, I am studying software development, mostly just to acquire a new skill, although I probably wouldn't turn down a job 
-                    in development making double my teaching salary. I have already completed a back-end development boot camp through Promineo Tech 
-                    and the Community College of Philadelphia learning Java, MySQL, Spring Boot, APIs, Menu-Driven Applications, and so much more. 
-                    Currently, I am enrolled in the front-end development boot camp, again through Promineo Tech and Gateway Community College and 
-                    learning JavaScript, HTML5, CSS, Bootstrap, JQuery, React, and other skills. I really enjoy development using all of these skills, 
-                    but I have said all along I think I am a true back-end developer. This website is an example of using HTML5, CSS, and Bootstrap 
-                    that I have created.
-                </p>
+                    <h3 id="SoftwareDev">My Software Development Journey</h3>
+                    <p>
+                        Right now, I am studying software development, mostly just to acquire a new skill, although I probably wouldn't turn down a job 
+                        in development making double my teaching salary. I have already completed a back-end development boot camp through Promineo Tech 
+                        and the Community College of Philadelphia learning Java, MySQL, Spring Boot, APIs, Menu-Driven Applications, and so much more. 
+                        Currently, I am enrolled in the front-end development boot camp, again through Promineo Tech and Gateway Community College and 
+                        learning JavaScript, HTML5, CSS, Bootstrap, JQuery, React, and other skills. I really enjoy development using all of these skills, 
+                        but I have said all along I think I am a true back-end developer. This website is an example of using HTML5, CSS, and Bootstrap 
+                        that I have created.
+                    </p>
 
-                <h3 class="myThing" id="DevelopmentProjects">Development Projects</h3>
-                <p class="myThing">
-                    Some of the projects I have created are located in my <a href="https://github.com/Brierre">GitHub</a>. So far, part 1 of 
-                    <a href="https://github.com/Brierre/RehearsalScheduler">Rehearsal Scheduler</a> is complete. I have created the card game, WAR, 
-                    using Java, and then JavaScript. I have made a Tic-Tac-Toe game, and I am working on a few others. I have also created websites 
-                    for the KCSD Alumni Band and my own page you see here. Look for more projects to come this summer as I learn more skills.
-                </p>
+                    <h3 id="DevelopmentProjects">Development Projects</h3>
+                    <p>
+                        Some of the projects I have created are located in my <a href="https://github.com/Brierre">GitHub</a>. So far, part 1 of 
+                        <a href="https://github.com/Brierre/RehearsalScheduler">Rehearsal Scheduler</a> is complete. I have created the card game, WAR, 
+                        using Java, and then JavaScript. I have made a Tic-Tac-Toe game, and I am working on a few others. I have also created websites 
+                        for the KCSD Alumni Band and my own page you see here. Look for more projects to come this summer as I learn more skills.
+                    </p>
 
-                <h3 class="myThing" id="Kayaking">Kayaking</h3>
-                <p class="myThing">
-                    Since the first time I got in a kayak in a New Jersey creek and was attacked by a territorial goose, I was hooked. I bought rails 
-                    to put on my car, and as soon as I get them installed, I'm buying my own kayaks and rack. Some of my favorite kayak journeys were 
-                    13 miles on a too-shallow Pine Creek with my sister, Ashley, a moonlight kayak paddle of the loop at Pocomoke River State Park, 
-                    and kayaking in the Atlantic Ocean at Grand Turk.
-                    <img height="200px" src="images/kayak.jpg">
-                </p>
+                    <h3 id="Kayaking">Kayaking</h3>
+                    <p>
+                        <img src="images/kayak.jpg">
+                        Since the first time I got in a kayak in a New Jersey creek and was attacked by a territorial goose, I was hooked. I bought rails 
+                        to put on my car, and as soon as I get them installed, I'm buying my own kayaks and rack. Some of my favorite kayak journeys were 
+                        13 miles on a too-shallow Pine Creek with my sister, Ashley, a moonlight kayak paddle of the loop at Pocomoke River State Park, 
+                        and kayaking in the Atlantic Ocean at Grand Turk.
+                    </p>
 
-                <h3 class="myThing" id="Crochet">Crochet</h3>
-                <p class="myThing">
-                    I love to crochet. I go in waves where I crochet everything and then don't crochet at all. I always said if I teach at just one 
-                    building I will start a crochet club. This year might be my chance. I especially love crocheting funny hats and little figures 
-                    from my favorite video game series, Final Fantasy, but when I have a lot of time, I like granny square projects.
-                </p>
+                    <h3 id="Crochet">Crochet</h3>
+                    <p>
+                        I love to crochet. I go in waves where I crochet everything and then don't crochet at all. I always said if I teach at just one 
+                        building I will start a crochet club. This year might be my chance. I especially love crocheting funny hats and little figures 
+                        from my favorite video game series, Final Fantasy, but when I have a lot of time, I like granny square projects.
+                    </p>
 
-                <h3 class="myThing" id="MMO">My Favorite Games</h3>
-                <p class="myThing">
-                    My favorite game is an MMO called Final Fantasy XI. Despite it being more than 20 years old, it is still up and running on servers 
-                    that connect people worldwide. I contribute to an open source emulator project, writing code to emulate the game, which is where I 
-                    got the brainy idea to learn to code "for real". I also loved playing World of Warcraft, and I'm a big fan of the Civilization and 
-                    Age of Empires games.
-                </p>
+                    <h3 id="MMO">My Favorite Games</h3>
+                    <p>
+                        My favorite game is an MMO called Final Fantasy XI. Despite it being more than 20 years old, it is still up and running on servers 
+                        that connect people worldwide. I contribute to an open source emulator project, writing code to emulate the game, which is where I 
+                        got the brainy idea to learn to code "for real". I also loved playing World of Warcraft, and I'm a big fan of the Civilization and 
+                        Age of Empires games.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
     <div class="container-fluid">
         <form>
             <div id="contactForm"><h3 class="padded">Contact Ms. Haigh</h3></div>

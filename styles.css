@@ -12,6 +12,9 @@ Where does the information from the form go? Google forms populates a spreadshee
     border-radius: 3px;
 }
 
+.col-sm-6 img {
+    width: 100%
+}
 .navbar {
     border-radius: 3px;;
 }
@@ -29,6 +32,17 @@ Where does the information from the form go? Google forms populates a spreadshee
     padding: 5px;
     list-style-type: none;
     font-size: 80%;
+}
+
+.myFavoriteThings {
+    padding: 5px;
+    list-style-type: none;
+}
+
+.myThing img {
+    width: 100px;
+    float: left;
+    padding-right: 10px;
 }
 
 .choir_img1 {
